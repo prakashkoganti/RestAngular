@@ -1,0 +1,127 @@
+	<div ng-controller="RegController as ctrl">
+		<form class="form-horizontal" ng-submit="ctrl.submit()">
+			<fieldset>
+				<div id="legend">
+					<legend class="">Register</legend>
+				</div>
+				<div class="control-group">
+					<!-- Username -->
+					<label class="control-label" for="userId">Employee UserId</label>
+					<div class="controls">
+						<input type="text" id="userId" name="userId" placeholder="Enter employeeUserId"
+							class="input-xlarge" ng-model="ctrl.emp.userId" required>
+							<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.userId.$error.required">This is a required field</span> 
+							<span ng-show="empForm.userId.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<!-- Username -->
+					<label class="control-label" for="esiId">Employee ESI Id</label>
+					<div class="controls">
+						<input type="text" id="esiId" name="esiId" placeholder="Enter employeeEsiId"
+							class="input-xlarge" ng-model="ctrl.emp.esiId" required>
+							<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.esiId.$error.required">This is a required field</span> 
+							<span ng-show="empForm.esiId.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<!-- Username -->
+					<label class="control-label" for="empName">Employee Name</label>
+					<div class="controls">
+						<input type="text" id="empName" name="empName" placeholder="Enter employeeName"
+							class="input-xlarge" ng-model="ctrl.emp.empName" required>
+							<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.empName.$error.required">This is a required field</span> 
+							<span ng-show="empForm.empName.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<!-- Username -->
+					<label class="control-label" for="projectName">Project Name</label>
+					<div class="controls">
+						<input type="text" id="projectName" name="projectName" placeholder="Enter projectName"
+							class="input-xlarge" ng-model="ctrl.emp.projectName" required>
+							<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.projectName.$error.required">This is a required field</span> 
+							<span ng-show="empForm.projectName.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label" for="dateOfbirth">Employee DateOfBirth</label>
+					<div class="controls">
+						<input type="text" id="dateOfbirth" name="dateOfbirth" placeholder="Enter dateOfBirth"
+							class="input-xlarge" ng-model="ctrl.emp.dateOfbirth" required>
+							<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.dateOfbirth.$error.required">This is a required field</span> 
+							<span ng-show="empForm.dateOfbirth.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<!-- Username -->
+					<label class="control-label" for="technology">Technology</label>
+					<div class="controls">
+						<input type="text" id="technology" name="technology" placeholder="Enter Technology"
+							class="input-xlarge" ng-model="ctrl.emp.technology" required>
+							<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.technology.$error.required">This is a required field</span> 
+							<span ng-show="empForm.technology.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<!-- E-mail -->
+					<label class="control-label" for="accentureEmail">Accenture E-mail</label>
+					<div class="controls">
+						<input type="text" id="accentureEmail" name="accentureEmail"
+							class="input-xlarge" ng-model="ctrl.emp.accentureEmail"
+							placeholder="Enter your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+						<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.accentureEmail.$error.required">This is a required field</span> 
+							<span ng-show="empForm.accentureEmail.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<!-- E-mail -->
+					<label class="control-label" for="personalEmail">E-mail</label>
+					<div class="controls">
+						<input type="text" id="personalEmail" name="personalEmail"
+							class="input-xlarge" ng-model="ctrl.emp.personalEmail"
+							placeholder="Enter your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+						<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.personalEmail.$error.required">This is a required field</span> 
+							<span ng-show="empForm.personalEmail.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<!-- Username -->
+					<label class="control-label" for="mobile">Mobile</label>
+					<div class="controls">
+						<input type="text" id="mobile" name="mobile" placeholder="Enter Mobile"
+							class="input-xlarge" ng-model="ctrl.emp.mobile" required>
+							<div class="has-error" ng-show="empForm.$dirty">
+							<span ng-show="empForm.mobile.$error.required">This is a required field</span> 
+							<span ng-show="empForm.mobile.$invalid">This value is invalid </span>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<!-- Button -->
+					<div class="controls">
+						<button class="btn btn-success" type="submit">Register</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<script type="text/javascript">
+		</script>
+	</div>
